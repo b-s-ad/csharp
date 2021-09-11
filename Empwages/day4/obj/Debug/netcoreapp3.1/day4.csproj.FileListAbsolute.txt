@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\New2\Empwages\day4\bin\Debug\netcoreapp3.1\day4.exe
+C:\Users\User\Desktop\New2\Empwages\day4\bin\Debug\netcoreapp3.1\day4.deps.json
+C:\Users\User\Desktop\New2\Empwages\day4\bin\Debug\netcoreapp3.1\day4.runtimeconfig.json
+C:\Users\User\Desktop\New2\Empwages\day4\bin\Debug\netcoreapp3.1\day4.runtimeconfig.dev.json
+C:\Users\User\Desktop\New2\Empwages\day4\bin\Debug\netcoreapp3.1\day4.dll
+C:\Users\User\Desktop\New2\Empwages\day4\bin\Debug\netcoreapp3.1\day4.pdb
+C:\Users\User\Desktop\New2\Empwages\day4\obj\Debug\netcoreapp3.1\day4.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\New2\Empwages\day4\obj\Debug\netcoreapp3.1\day4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\New2\Empwages\day4\obj\Debug\netcoreapp3.1\day4.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\New2\Empwages\day4\obj\Debug\netcoreapp3.1\day4.AssemblyInfo.cs
+C:\Users\User\Desktop\New2\Empwages\day4\obj\Debug\netcoreapp3.1\day4.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\New2\Empwages\day4\obj\Debug\netcoreapp3.1\day4.dll
+C:\Users\User\Desktop\New2\Empwages\day4\obj\Debug\netcoreapp3.1\day4.pdb
+C:\Users\User\Desktop\New2\Empwages\day4\obj\Debug\netcoreapp3.1\day4.genruntimeconfig.cache
