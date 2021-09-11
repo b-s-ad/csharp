@@ -8,7 +8,8 @@ namespace day4
         public static void Main(string[] args)
         {
             //UC1_EmployeeAttendance.GetAttendance();
-            UC2_EmpWage.EmpWage();
+            //UC2_EmpWage.EmpWage();
+            UC3_PartTimeEmpWage.PartTimeEmpWage();
             Console.ReadKey();
         }
     }
