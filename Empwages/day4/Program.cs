@@ -12,7 +12,8 @@ namespace day4
             //UC2_EmpWage.EmpWage();
             //UC3_PartTimeEmpWage.PartTimeEmpWage(); 
             //UC4_EmpWageUsingSwitch.EmpWageUsingSwitch();
-            UC5_CalculateWagesFor20DaysInMonth.CalculateWagesFor20DaysInMonth();
+            //UC5_CalculateWagesFor20DaysInMonth.CalculateWagesFor20DaysInMonth();
+            UC6_CalculateWageTill100HrsOr20IsReached.CalculateWageTill100HrsOr20IsReached();
             Console.ReadKey();
         }
     }
