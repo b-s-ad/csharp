@@ -7,7 +7,9 @@ namespace day4
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage Computation Program");
+            //Console.WriteLine("Welcome to Employee Wage Computation Program");
+            UC1_EmployeeAttendance.GetAttendance();
+            Console.ReadKey();
         }
     }
 }
