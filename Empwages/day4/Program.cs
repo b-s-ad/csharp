@@ -1,6 +1,7 @@
 ﻿using System;
 using day4.UC9;
 using Day4.UC10;
+using Day4.UCLast_FinalSolution;
 
 namespace day4
 {
@@ -30,14 +31,23 @@ namespace day4
             #endregion UC ending*/
 
 
-            #region 
+            /*#region UC10
 
             EmpWageBuilderArray empWageBuilder = new EmpWageBuilderArray();
             empWageBuilder.addCompanyEmpWage("DMart", 20, 2, 10);
             empWageBuilder.addCompanyEmpWage("Reliance", 10, 4, 20);
             empWageBuilder.computeEmpWage();
 
-            #endregion 
+            #endregion UC10 ending*/
+
+            #region FinalSolution
+
+            EmpWageBuilder empWageBuild = new EmpWageBuilder();
+            empWageBuild.addCompanyEmpWage("DMart", 20, 2, 10);
+            empWageBuild.addCompanyEmpWage("Reliance", 10, 4, 20);
+            empWageBuild.computeEmpWage();
+
+            #endregion FinalSolution ending 
 
 
 
