@@ -9,7 +9,8 @@ namespace day4
         {
             //Console.WriteLine("Welcome to Employee Wage Computation Program");
             //UC1_EmployeeAttendance.GetAttendance();
-            UC2_EmpWage.EmpWage();
+            //UC2_EmpWage.EmpWage();
+            UC3_PartTimeEmpWage.PartTimeEmpWage(); 
             Console.ReadKey();
         }
     }
