@@ -11,7 +11,8 @@ namespace day4
             //UC1_EmployeeAttendance.GetAttendance();
             //UC2_EmpWage.EmpWage();
             //UC3_PartTimeEmpWage.PartTimeEmpWage(); 
-            UC4_EmpWageUsingSwitch.EmpWageUsingSwitch();
+            //UC4_EmpWageUsingSwitch.EmpWageUsingSwitch();
+            UC5_CalculateWagesFor20DaysInMonth.CalculateWagesFor20DaysInMonth();
             Console.ReadKey();
         }
     }
