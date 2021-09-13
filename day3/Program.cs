@@ -7,6 +7,7 @@ namespace day3
         static void Main(string[] args)
         {
             startup.Wel();
+            UC1_CalculateLength.CalculateLength();
             Console.ReadLine();
         }
     }
