@@ -1,0 +1,14 @@
+D:\Test\day3\bin\Debug\netcoreapp3.1\day3.exe
+D:\Test\day3\bin\Debug\netcoreapp3.1\day3.deps.json
+D:\Test\day3\bin\Debug\netcoreapp3.1\day3.runtimeconfig.json
+D:\Test\day3\bin\Debug\netcoreapp3.1\day3.runtimeconfig.dev.json
+D:\Test\day3\bin\Debug\netcoreapp3.1\day3.dll
+D:\Test\day3\bin\Debug\netcoreapp3.1\day3.pdb
+D:\Test\day3\obj\Debug\netcoreapp3.1\day3.csproj.AssemblyReference.cache
+D:\Test\day3\obj\Debug\netcoreapp3.1\day3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\day3\obj\Debug\netcoreapp3.1\day3.AssemblyInfoInputs.cache
+D:\Test\day3\obj\Debug\netcoreapp3.1\day3.AssemblyInfo.cs
+D:\Test\day3\obj\Debug\netcoreapp3.1\day3.csproj.CoreCompileInputs.cache
+D:\Test\day3\obj\Debug\netcoreapp3.1\day3.dll
+D:\Test\day3\obj\Debug\netcoreapp3.1\day3.pdb
+D:\Test\day3\obj\Debug\netcoreapp3.1\day3.genruntimeconfig.cache
