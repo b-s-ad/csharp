@@ -8,7 +8,8 @@ namespace day3
         {
             startup.Wel();
             //UC1_CalculateLength.CalculateLength();
-            UC2_CheckEqualityLength.CheckEqualityLength();
+            //UC2_CheckEqualityLength.CheckEqualityLength();
+            UC3_Compare2Lengths.Compare2Lengths();
             Console.ReadLine();
         }
     }
