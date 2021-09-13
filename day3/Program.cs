@@ -7,7 +7,8 @@ namespace day3
         static void Main(string[] args)
         {
             startup.Wel();
-            UC1_CalculateLength.CalculateLength();
+            //UC1_CalculateLength.CalculateLength();
+            UC2_CheckEqualityLength.CheckEqualityLength();
             Console.ReadLine();
         }
     }
