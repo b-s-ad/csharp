@@ -10,8 +10,10 @@ namespace Basic_Core_Programs
         {
             Console.WriteLine("Basic Core Programs");
             //leapyear.leap_year();
-            Factors.Factor();
+            //Factors.Factor();
+            Quotient_and_Remainder.QuoRem();
             Console.ReadLine();
         }
     }
 }
+
