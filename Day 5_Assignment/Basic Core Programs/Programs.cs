@@ -9,7 +9,8 @@ namespace Basic_Core_Programs
         public static void Main(string[] args)
         {
             Console.WriteLine("Basic Core Programs");
-            leapyear.leap_year();
+            //leapyear.leap_year();
+            Factors.Factor();
             Console.ReadLine();
         }
     }
