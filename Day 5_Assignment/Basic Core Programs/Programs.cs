@@ -11,7 +11,8 @@ namespace Basic_Core_Programs
             Console.WriteLine("Basic Core Programs");
             //leapyear.leap_year();
             //Factors.Factor();
-            Quotient_and_Remainder.QuoRem();
+            //Quotient_and_Remainder.QuoRem();
+            Swap_Two_Numbers.Swap();
             Console.ReadLine();
         }
     }
