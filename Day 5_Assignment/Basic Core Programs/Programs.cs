@@ -14,7 +14,8 @@ namespace Basic_Core_Programs
             //Quotient_and_Remainder.QuoRem();
             //Swap_Two_Numbers.Swap();
             //Even_or_Odd.Evenodd();
-            Vowel_or_Consonant.VowelConsonant();
+            //Vowel_or_Consonant.VowelConsonant();
+            Largest_Among_3_Numbers.Largest3Num();
             Console.ReadLine();
         }
     }
