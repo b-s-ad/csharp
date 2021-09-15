@@ -13,7 +13,8 @@ namespace Basic_Core_Programs
             //Factors.Factor();
             //Quotient_and_Remainder.QuoRem();
             //Swap_Two_Numbers.Swap();
-            Even_or_Odd.Evenodd();
+            //Even_or_Odd.Evenodd();
+            Vowel_or_Consonant.VowelConsonant();
             Console.ReadLine();
         }
     }
