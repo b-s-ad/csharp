@@ -1,0 +1,14 @@
+D:\Test\Basic Core Programs\obj\Debug\netcoreapp3.1\Basic Core Programs.csproj.AssemblyReference.cache
+D:\Test\Basic Core Programs\obj\Debug\netcoreapp3.1\Basic Core Programs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\Basic Core Programs\obj\Debug\netcoreapp3.1\Basic Core Programs.AssemblyInfoInputs.cache
+D:\Test\Basic Core Programs\obj\Debug\netcoreapp3.1\Basic Core Programs.AssemblyInfo.cs
+D:\Test\Basic Core Programs\obj\Debug\netcoreapp3.1\Basic Core Programs.csproj.CoreCompileInputs.cache
+D:\Test\Basic Core Programs\bin\Debug\netcoreapp3.1\Basic Core Programs.exe
+D:\Test\Basic Core Programs\bin\Debug\netcoreapp3.1\Basic Core Programs.deps.json
+D:\Test\Basic Core Programs\bin\Debug\netcoreapp3.1\Basic Core Programs.runtimeconfig.json
+D:\Test\Basic Core Programs\bin\Debug\netcoreapp3.1\Basic Core Programs.runtimeconfig.dev.json
+D:\Test\Basic Core Programs\bin\Debug\netcoreapp3.1\Basic Core Programs.dll
+D:\Test\Basic Core Programs\bin\Debug\netcoreapp3.1\Basic Core Programs.pdb
+D:\Test\Basic Core Programs\obj\Debug\netcoreapp3.1\Basic Core Programs.dll
+D:\Test\Basic Core Programs\obj\Debug\netcoreapp3.1\Basic Core Programs.pdb
+D:\Test\Basic Core Programs\obj\Debug\netcoreapp3.1\Basic Core Programs.genruntimeconfig.cache
