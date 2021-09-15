@@ -12,7 +12,8 @@ namespace Basic_Core_Programs
             //leapyear.leap_year();
             //Factors.Factor();
             //Quotient_and_Remainder.QuoRem();
-            Swap_Two_Numbers.Swap();
+            //Swap_Two_Numbers.Swap();
+            Even_or_Odd.Evenodd();
             Console.ReadLine();
         }
     }
