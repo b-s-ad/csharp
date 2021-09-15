@@ -17,7 +17,8 @@ namespace Basic_Core_Programs
             //Vowel_or_Consonant.VowelConsonant();
             //Largest_Among_3_Numbers.Largest3Num();
             //Flip_Coin.Flip();
-            power2N.power();
+            //power2N.power();
+            Harmonic_Number.Harmonic();
             Console.ReadLine();
         }
     }
