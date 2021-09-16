@@ -7,8 +7,9 @@ namespace Logical_Programs
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Logical Programs");
-            Fibonacci_Series.Fibonacci();
+            Console.WriteLine("Logical Programs\n");
+            //Fibonacci_Series.Fibonacci();
+            Perfect_Number.Perfect();
             Console.ReadLine();
         }
     }
