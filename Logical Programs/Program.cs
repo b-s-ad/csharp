@@ -8,6 +8,7 @@ namespace Logical_Programs
         {
 
             Console.WriteLine("Logical Programs");
+            Fibonacci_Series.Fibonacci();
             Console.ReadLine();
         }
     }
