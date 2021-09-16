@@ -8,9 +8,10 @@ namespace Logical_Programs
         {
 
             Console.WriteLine("Logical Programs\n");
-            //Fibonacci_Series.Fibonacci();
-            Perfect_Number.Perfect();
-            Console.ReadLine();
+/*            Fibonacci_Series.Fibonacci();
+              Perfect_Number.Perfect();
+*/            Reverse_a_number.Reverse();
+              Console.ReadLine();
         }
     }
 }
