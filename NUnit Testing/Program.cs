@@ -8,8 +8,8 @@ namespace NUnit_Testing
         static void Main(string[] args)
         {
 
-            WriteLine("\nPrograms for NUnit Testing\n");
-
+            WriteLine("\nNUnit Testing\n");
+            temperaturConversion.tempcon();
             ReadLine();
         }
     }
