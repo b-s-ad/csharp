@@ -8,11 +8,12 @@ namespace Logical_Programs
         {
 
             Console.WriteLine("Logical Programs\n");
-           /* Fibonacci_Series.Fibonacci();
-            Perfect_Number.Perfect();
-            Reverse_a_number.Reverse();
-            Simulate_Stopwatch.Time();*/
-            Prime_Number.Prime();
+            /* Fibonacci_Series.Fibonacci();
+             Perfect_Number.Perfect();
+             Reverse_a_number.Reverse();
+             Simulate_Stopwatch.Time();
+             Prime_Number.Prime();*/
+            Coupon_Numbers.cnum();
             Console.ReadLine();
         }
     }
