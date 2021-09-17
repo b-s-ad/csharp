@@ -9,7 +9,8 @@ namespace NUnit_Testing
         {
 
             WriteLine("\nNUnit Testing\n");
-            temperaturConversion.tempcon();
+            //temperaturConversion.tempcon();
+            BinaryConversion.ToBinary();
             ReadLine();
         }
     }
