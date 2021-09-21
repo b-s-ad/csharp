@@ -40,9 +40,9 @@ namespace day3
             
             //CheckEqualityLength
             if (Line1.Equals(Line2))
-                Console.WriteLine("Lines are equal");
+                Console.WriteLine("Two Lines are equal");
             else
-                Console.WriteLine("lines are not equal");
+                Console.WriteLine("Two lines are not equal");
 
 
 
