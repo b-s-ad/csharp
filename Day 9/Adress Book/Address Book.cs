@@ -14,17 +14,32 @@ namespace AddressBook
 
         ArrayList address = new ArrayList { };
         Boolean menu = true;
-        
-        do
-        {
+
+            static void Exit()
+            {                               
+                System.Environment.Exit(1);
+                Console.ReadLine();
+            }
+
+            do
+            {
         WriteLine("Welcome to my address book program");
-        WriteLine("*****************************\n");
+        WriteLine("************************************\n");
         WriteLine("\nPress 1 to Create a Contacts in Address Book");
-        
+        WriteLine("Press 0 to Exit");
 
-        WriteLine("");
-        ReadLine();
+                WriteLine("");
+                string Press;
+                Press = ReadLine();
+                switch (Press)
+                {
+                    case "1":
 
+                        break;
+                    case "0":
+                        Exit();
+                        break;
+                }
 
 
         WriteLine("\nPlease Enter your Firstname");
@@ -65,13 +80,13 @@ namespace AddressBook
         string valueString4 = str4;
 
 
-	WriteLine("Please Enter Email");
+        WriteLine("Please Enter Email");
         string str8 = "Email";
         str8 = ReadLine();
         string valueString8 = str8;
 
         
-	WriteLine("\n\nFind below list of the stored Details that you have entered  : \n\n");
+        WriteLine("\n\nFind below list of the stored Details that you have entered  : \n\n");
 
         WriteLine("Firstname you entered: " + valueString1);
         WriteLine("Lastname you entered: " + valueString2);
@@ -86,12 +101,11 @@ namespace AddressBook
     }
         while (menu == true);
 
-       
+
         }
-
+        
     }
 
     }
 
-  
 
