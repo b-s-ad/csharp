@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using static System.Console;
 
-namespace AddressBook  // Day 10 UC 3
+namespace AddressBook  // Day 10 UC 4
 {
     class AddressBook
     {
@@ -107,7 +107,16 @@ namespace AddressBook  // Day 10 UC 3
             return GetEntryIndex(firstname) != -1;
         }
 
-        
+        public void RemoveEntry(string firstname)
+        {
+            var index = GetEntryIndex(firstname);
+            if (index != -1)
+            {
+                contacts[index] = null;
+                Console.WriteLine("{0} removed from contacts", firstname);
+            }
+        }
+
         public string ViewContactsList()
         {
             string contactList = "";
@@ -117,9 +126,9 @@ namespace AddressBook  // Day 10 UC 3
                 {
                     continue;
                 }
-                contactList += String.Format("\n\nFirstName : {0}\nLast Name : {1}\nAddress : {2}\nCity : {3}\nState : {4}\nZip : {5}\nPhone NUmber : {6}\nEmail : {7}\n" + Environment.NewLine, contact.FirstName, contact.LastName, contact.Address, contact.City, contact.State, contact.Zip, contact.PhoneNumber, contact.Email);
+                contactList += String.Format("\n\nFirstName : {0}\tLast Name : {1}\tAddress : {2}\tCity : {3}\tState : {4}\tZip : {5}\tPhone NUmber : {6}\tEmail : {7} \n" + Environment.NewLine, contact.FirstName, contact.LastName, contact.Address, contact.City, contact.State, contact.Zip, contact.PhoneNumber, contact.Email);
             }
-            return (contactList != String.Empty) ? contactList : "Your Address Book is empty.";
+            return (contactList != String.Empty) ? contactList : "\tYour Address Book is empty.";
         }
     }
 }
