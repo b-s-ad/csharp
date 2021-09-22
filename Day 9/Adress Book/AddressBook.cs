@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using static System.Console;
 
-namespace AddressBook //Day 9 UC 2
+namespace AddressBook  // Day 9 UC 3
 {
     class AddressBook
     {
@@ -11,12 +11,13 @@ namespace AddressBook //Day 9 UC 2
 
         public AddressBook()
         {
-            contacts = new Contact[100]; ;
+            contacts = new Contact[5]; ;
         }
         public bool AddEntry(string firstname, string lastname, string address, string city, string state, string zip, string phonenumber, string email)
         {
             if (!ContainsEntry(firstname))
             {
+
                 firstname = FormatContact(firstname);
                 lastname = FormatContact(lastname);
                 address = FormatContact(address);
@@ -34,11 +35,10 @@ namespace AddressBook //Day 9 UC 2
                     {
                         contacts[i] = AddContact;
                         WriteLine("==============================================================================\n");
-                        Console.WriteLine("\n\tAddress Book is Updated Now"+ "\n\nThe Details you have Enter below : \n\nFirstName : {0}\nLast Name : {1}\nAddress : {2}\nCity : {3}\nState : {4}\nZip : {5}\nPhone NUmber : {6}\nEmail : {7}\n\n\t\t Its has been added in the Address Book"+ "\n==============================================================================\n", firstname, lastname, address, city, state, zip, phonenumber, email);
+                        Console.WriteLine("\n\tAddress Book is Updated Now" + "\n\nThe Details you have Enter below : \n\nFirstName : {0}\tLast Name : {1}\tAddress : {2}\tCity : {3}\tState : {4}\tZip : {5}\tPhone NUmber : {6}\tEmail : {7} \n\n" +
+                            "\tIts has been added in the Address Book" + "\n==============================================================================\n", firstname, lastname, address, city, state, zip, phonenumber, email);
                         return true;
-                        
                     }
-                    
                 }
                 Console.WriteLine($"\n\tCannot add ({firstname}) to Address Book since it is full!");
                 return false;
@@ -46,11 +46,35 @@ namespace AddressBook //Day 9 UC 2
             else
             {
                 Console.WriteLine($"\n\t({firstname}) already exists in Address Book!");
-                
+                UpdateContact(firstname);
             }
             return false;
         }
-       
+        public bool UpdateContact(string originalName)
+        {
+            Console.Write("Are you sure you would you like to update the Contact? -- Type 'Y' or 'N': ");
+            string userResponse = Console.ReadLine().ToLower();
+            if (userResponse == "y")
+            {
+                Console.Write($"Would you like to update {originalName}'s address? TYPE 'Address' for address: ");
+                string contactToUpdate = Console.ReadLine().ToLower();
+
+                Console.Write($"Please enter changes to the {contactToUpdate} here: ");
+                string updatedContact = Console.ReadLine().Trim();
+                updatedContact = FormatContact(updatedContact);
+
+                int index = GetEntryIndex(originalName);
+                switch (contactToUpdate)
+                {
+                  
+                    case "address":
+                        contacts[index].Address = updatedContact;
+                        Console.WriteLine($"Contact {originalName}'s {contactToUpdate} updated to {updatedContact}");
+                        return true;
+                }
+            }
+            return false;
+        }
         private string FormatContact(string stringToFormat)
         {
             char[] arr = stringToFormat.ToCharArray();
@@ -83,7 +107,7 @@ namespace AddressBook //Day 9 UC 2
             return GetEntryIndex(firstname) != -1;
         }
 
-       //Contact List
+        
         public string ViewContactsList()
         {
             string contactList = "";
@@ -93,11 +117,9 @@ namespace AddressBook //Day 9 UC 2
                 {
                     continue;
                 }
-                WriteLine("==============================================================================");
-                contactList += String.Format("\nFirst Name : {0}\nLast Name : {1}\nAddress : {2}\nCity : {3}\nState : {4}\nZip : {5}\nPhone NUmber : {6}\nEmail : {7}\n"+"==============================================================================\n" + Environment.NewLine, contact.FirstName, contact.LastName, contact.Address, contact.City, contact.State, contact.Zip, contact.PhoneNumber, contact.Email);
-                
+                contactList += String.Format("\n\nFirstName : {0}\nLast Name : {1}\nAddress : {2}\nCity : {3}\nState : {4}\nZip : {5}\nPhone NUmber : {6}\nEmail : {7}\n" + Environment.NewLine, contact.FirstName, contact.LastName, contact.Address, contact.City, contact.State, contact.Zip, contact.PhoneNumber, contact.Email);
             }
-            return (contactList != String.Empty) ? contactList : "\n\tYour Address Book is empty.";
+            return (contactList != String.Empty) ? contactList : "Your Address Book is empty.";
         }
     }
 }

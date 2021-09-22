@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using static System.Console;
 
-namespace AddressBook
+namespace AddressBook // Day 9 UC 3
 
 {
     class Program
@@ -17,13 +17,12 @@ namespace AddressBook
 
         void Menu()
         {
-
-            WriteLine("\n\tWelcome to Address Book\n");
-            WriteLine("\nPlease Choose below Option\n\n");
-
+            WriteLine("\n\tWelcome to Address Book Program\n");
+            WriteLine("\nPlease Choose below Option\n\n");   
             WriteLine("1.Add a New contact.\n");
-            WriteLine("2.View the list of All Contacts.\n");            
-            WriteLine("3.To Exit Now [or] in Any option.\n");
+            WriteLine("2.View the list of All Contacts.\n");
+            WriteLine("3.Modidy a Existing Contact\n");
+            WriteLine("4.To Exit Now [or] Anytime.\n");
         }
 
         void UpdateAddressBook(string userInput)
@@ -41,69 +40,69 @@ namespace AddressBook
             switch (userInput.ToLower())
             {
                 case "1":
-                    Write("Enter the First Name: ");
+                    Write("Enter a First name: ");
                     firstname = ReadLine().Trim();
                     switch (firstname)
                     {
-                        case "3":
+                        case "4":
                             break;
                             default:
-                                Write("Enter the Last Name : ");
+                                Write("Enter a Last name: ");
                             lastname = ReadLine().Trim();
                             switch (lastname)
                             {
-                                case "3":
+                                case "4":
                                     break;
                                 default:
 
-                                        Write("Enter the Address : ");
+                                        Write("Enter an address: ");
                                         address = ReadLine().Trim();
                                         switch (address)
                                         {
-                                            case "3":
+                                            case "4":
                                                 break;
                                             default:
 
-                                                Write("Enter the City : ");
+                                                Write("Enter the City: ");
                                     city = ReadLine().Trim();
                                     switch (city)
                                     {
-                                        case "3":
+                                        case "4":
                                             break;
                                             default:
                                             case "1":
-                                            Write("Enter the State : ");
+                                            Write("Enter the state: ");
                                             state = ReadLine().Trim();
                                             switch (state)
                                             {
-                                                case "3":
+                                                case "4":
                                                     break;
                                                 default:
 
                                                 case "1":
-                                                    Write("Enter the Zip : ");
+                                                    Write("Enter the Zip: ");
                                                     zip = ReadLine().Trim();
                                                     switch (zip)
                                                     {
-                                                        case "3":
+                                                        case "4":
                                                             break;
                                                         default:
 
                                                         case "1":
-                                                            Write("Enter the Phone Number : ");
+                                                            Write("Enter the Phone NUmber: ");
                                                             phonenumber = ReadLine().Trim();
                                                             switch (phonenumber)
                                                             {
-                                                                case "3":
+                                                                case "4":
                                                                     break;
                                                                 default:
 
                                                                 case "1":
-                                                                    Write("Enter the Email : ");
+                                                                    Write("Enter a Email : ");
                                                                     email = ReadLine().Trim();
                                                                     switch (email)
                                                                     {
-                                                                        case "3":
+                                                                        case "4":
                                                                             break;
                                                                         default:
 
@@ -123,15 +122,18 @@ namespace AddressBook
                             break;
                     }
                     break;
-                      
-                }
-                break;
+                        }
+                        break;
 
                     
         case "2":
                         WriteLine(addressBook.ViewContactsList());
         break;
-                   
+                    case "3":
+                        WriteLine("Please enter the name of the Contact you wish to update");
+                        firstname = ReadLine();
+                        addressBook.UpdateContact(firstname);
+                        break;
 
     }
 }
@@ -139,10 +141,10 @@ namespace AddressBook
         {
             Menu();
             string userInput = "";
-            while (userInput != "3")
+            while (userInput != "4")
             {
-                WriteLine("\n\nChoose Any Option [1,2,3] : \n\n");                
-                userInput = ReadLine().Trim();
+                WriteLine("\n\nChoose Any Option [1|2|3|4] : \n\n");
+                    userInput = ReadLine().Trim();
                 UpdateAddressBook(userInput);
             }
         }
