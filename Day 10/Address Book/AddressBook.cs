@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using static System.Console;
 
-namespace AddressBook  // Day 10 UC 4
+namespace AddressBook  // Day 10 UC 5
 {
     class AddressBook
     {
@@ -11,7 +11,7 @@ namespace AddressBook  // Day 10 UC 4
 
         public AddressBook()
         {
-            contacts = new Contact[5]; ;
+            contacts = new Contact[500]; ;
         }
         public bool AddEntry(string firstname, string lastname, string address, string city, string state, string zip, string phonenumber, string email)
         {
