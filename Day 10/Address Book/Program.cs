@@ -23,7 +23,7 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
                 WriteLine("2.View the List of All Contacts | | Unique Name Contact.\n");
                 WriteLine("3.Modidy a Existing Contact\n");
                 WriteLine("4.Remove Contact\n");
-                WriteLine("5.To Exit Now [or] Anytime.\n");
+                WriteLine("\tNote = TYPE ??? To Exit Now [or] Anytime.\n");
 
             }
 
@@ -46,14 +46,14 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
                         firstname = ReadLine().Trim();
                         switch (firstname)
                         {
-                            case "5":
+                            case "???":
                                 break;
                             default:
                                 Write("Enter the Last Name : ");
                                 lastname = ReadLine().Trim();
                                 switch (lastname)
                                 {
-                                    case "5":
+                                    case "???":
                                         break;
                                     default:
 
@@ -61,7 +61,7 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
                                         address = ReadLine().Trim();
                                         switch (address)
                                         {
-                                            case "5":
+                                            case "???":
                                                 break;
                                             default:
 
@@ -69,7 +69,7 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
                                                 city = ReadLine().Trim();
                                                 switch (city)
                                                 {
-                                                    case "5":
+                                                    case "???":
                                                         break;
                                                     default:
                                                     case "1":
@@ -77,7 +77,7 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
                                                         state = ReadLine().Trim();
                                                         switch (state)
                                                         {
-                                                            case "5":
+                                                            case "???":
                                                                 break;
                                                             default:
 
@@ -86,7 +86,7 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
                                                                 zip = ReadLine().Trim();
                                                                 switch (zip)
                                                                 {
-                                                                    case "5":
+                                                                    case "???":
                                                                         break;
                                                                     default:
 
@@ -95,7 +95,7 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
                                                                         phonenumber = ReadLine().Trim();
                                                                         switch (phonenumber)
                                                                         {
-                                                                            case "5":
+                                                                            case "???":
                                                                                 break;
                                                                             default:
 
@@ -104,7 +104,7 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
                                                                                 email = ReadLine().Trim();
                                                                                 switch (email)
                                                                                 {
-                                                                                    case "5":
+                                                                                    case "???":
                                                                                         break;
                                                                                     default:
 
@@ -131,7 +131,7 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
                         firstname = Console.ReadLine();
                         switch (firstname)
                         {
-                            case "5":
+                            case "???":
                                 break;
                             default:
                                 addressBook.RemoveEntry(firstname);
@@ -154,9 +154,9 @@ namespace AddressBook // Day 10 UC 6 // Add multiple Address Book |  Each Addres
             {
                 Menu();
                 string userInput = "";
-                while (userInput != "5")
+                while (userInput != "???")
                 {
-                    WriteLine("\n\nChoose Any Option [1|2|3|4|5] : \n\n");
+                    WriteLine("\n\nChoose Any Option [1|2|3|4|???] : \n\n");
                     userInput = ReadLine().Trim();
                     UpdateAddressBook(userInput);
                 }
