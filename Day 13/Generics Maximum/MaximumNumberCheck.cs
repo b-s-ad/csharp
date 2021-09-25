@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FindMaxNum // UC 3 : Strings E.g. Apple Peach Banana
+namespace FindMaxNum // // Refactor : Refactor all the 3 to One Generic Method and find the maximum
 {
   class MaximumNumberCheck
         {
