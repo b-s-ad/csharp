@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace FindMaxNum
-{
+{ 
   public class GenericMaximum<T> where T : IComparable
         {
             public T[] value;

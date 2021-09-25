@@ -18,6 +18,16 @@ namespace FindMaxNum
             Console.WriteLine(output2);
             int output3 = MaximumNumberCheck.MaximumIntegerNumber3(22, 11, 33);
             Console.WriteLine(output3);
+            WriteLine("\nGiven Max Number at 1st Position return the Same Floats Number : 111.2, 22.45, 78.56");
+            WriteLine("Given Max Number at 2nd Position return the Same Floats Number : 22.45, 111.2, 78.56");
+            WriteLine("Given Max Number at 3rd Position return the Same Floats Number : 78.56, 22.45, 111.2");
+            WriteLine("");
+            double doubleoutput = MaximumNumberCheck.MaximumFloatNumber(111.2, 22.45, 78.56);
+            Console.WriteLine(doubleoutput);
+            double doubleoutput2 = MaximumNumberCheck.MaximumFloatNumber2(22.45, 111.2, 78.56);
+            Console.WriteLine(doubleoutput2);
+            double doubleoutput3 = MaximumNumberCheck.MaximumFloatNumber3(78.56, 22.45, 111.2);
+            Console.WriteLine(doubleoutput3);
             ReadLine();
            
         }
