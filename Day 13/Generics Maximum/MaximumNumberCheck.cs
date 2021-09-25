@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FindMaxNum // // Refactor : Refactor all the 3 to One Generic Method and find the maximum
+namespace FindMaxNum // UC 4 : Extend the max method take more then three parameters
 {
   class MaximumNumberCheck
         {

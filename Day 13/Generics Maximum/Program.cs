@@ -3,7 +3,7 @@ using static System.Console;
 
 namespace FindMaxNum
 {
-    class Program  // Refactor : Refactor all the 3 to One Generic Method and find the maximum
+    class Program  // UC 4 : Extend the max method take more then three parameters 
     {
         static void Main(string[] args)
         {
@@ -74,9 +74,30 @@ namespace FindMaxNum
             Console.WriteLine(strigoutput);
             string strigoutputS3 = MaximumNumberCheck.MaximumStringNumber3("Apple", "Peach", "Banana");
             Console.WriteLine(strigoutputS3);
-            
             ReadLine();
 
+
+            WriteLine("\tUC 4 : take more then three parameters \n\nGiven Max Number Integer to take more then three parameters : 112, 344, 432, 555, 678 ");
+            WriteLine("\nGiven Max Number Floats to take more then three parameters : : 11.2, 34.4, 4.32, 55.5, 6.78 ");
+            WriteLine("\nGiven Max Number Strings Number to take more then three parameters : |''111''|,|''222''|,|''333''|''55''|''999''|\n");
+            
+            ReadKey();
+            int[] intArray = { 112, 344, 432, 555, 678 };
+            GenericMaximum<int> generic = new GenericMaximum<int>(intArray);
+            generic.PrintMaxValue();
+            double[] doubleArray = { 11.2, 34.4, 4.32, 55.5, 6.78 };
+            GenericMaximum<double> genericDouble = new GenericMaximum<double>(doubleArray);
+            genericDouble.PrintMaxValue();
+            string[] stringArray = { "111", "222", "333", "55", "999"};
+            GenericMaximum<string> genericString = new GenericMaximum<string>(stringArray);
+            //GenericMaximum<Employee> genericString = new GenericMaximum<string>(stringArray);
+            genericString.PrintMaxValue();
+            Console.ReadKey();
+           
+               
+        
+
+           
 
 
 
