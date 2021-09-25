@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FindMaxNum
+namespace FindMaxNum // UC 3 : Strings E.g. Apple Peach Banana
 {
   class MaximumNumberCheck
         {
@@ -22,6 +22,8 @@ namespace FindMaxNum
                 }
                 throw new Exception("firstNumber,secondNumber and thirdNumber are same");
             }
+
+        
         public static int MaximumIntegerNumber2(int firstValue, int secondValue, int thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)

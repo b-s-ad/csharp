@@ -3,7 +3,7 @@ using static System.Console;
 
 namespace FindMaxNum
 {
-    class Program
+    class Program  // UC 3 : Strings E.g. Apple Peach Banana
     {
         static void Main(string[] args)
         {
@@ -31,19 +31,31 @@ namespace FindMaxNum
             double doubleoutput3 = MaximumNumberCheck.MaximumFloatNumber3(78.56, 22.45, 111.2);
             Console.WriteLine(doubleoutput3);
 
-            
-            
-            
+
+
             WriteLine($"\nGiven Max Number at 1st Position return the Same Strings Number : |''33''|,|''22''|,|''11''|");
             WriteLine("Given Max Number at 2nd Position return the Same Strings Number : |''11''|,|''33''|,|''22''|");
             WriteLine("Given Max Number at 3rd Position return the Same Strings Number : |''22''|,|''11''|,|''33''|");
             WriteLine("");
             string strigoutput = MaximumNumberCheck.MaximumStringNumber("33", "22", "11");
             Console.WriteLine(strigoutput);
-            string strigoutput2 = MaximumNumberCheck.MaximumStringNumber3("11", "33", "22");
+            string strigoutput2 = MaximumNumberCheck.MaximumStringNumber2("11", "33", "22");
             Console.WriteLine(strigoutput2);
-            string strigoutput3 = MaximumNumberCheck.MaximumStringNumber3("22", "11", "33");
+            string strigoutput3 = MaximumNumberCheck.MaximumStringNumber3("22", "11", "33"+"\n========================================================================");
             Console.WriteLine(strigoutput3);
+
+
+            WriteLine("\t3 Strings E.g. Apple Peach Banana");
+            WriteLine("\nGiven Max Number at 1st Position return the Same Strings Number : |''Peach''|,|''Apple''|,|''Banana''|");
+            WriteLine("Given Max Number at 2nd Position return the Same Strings Number : |''Banana''|,|''Peach''|,|''Apple''|");
+            WriteLine("Given Max Number at 3rd Position return the Same Strings Number : |''Banana''|,|''Apple''|,|''Peach''|");
+            WriteLine("");
+            string strigoutputS = MaximumNumberCheck.MaximumStringNumber("Peach", "Apple", "Banana");
+            Console.WriteLine(strigoutputS);
+            string strigoutputS2 = MaximumNumberCheck.MaximumStringNumber2("Banana", "Peach", "Apple");
+            Console.WriteLine(strigoutputS2);
+            string strigoutputS3 = MaximumNumberCheck.MaximumStringNumber3("Banana", "Apple", "Peach");
+            Console.WriteLine(strigoutputS3);
             ReadLine();
 
         }
