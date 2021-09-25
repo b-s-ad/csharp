@@ -18,6 +18,8 @@ namespace FindMaxNum
             Console.WriteLine(output2);
             int output3 = MaximumNumberCheck.MaximumIntegerNumber3(22, 11, 33);
             Console.WriteLine(output3);
+            
+            
             WriteLine("\nGiven Max Number at 1st Position return the Same Floats Number : 111.2, 22.45, 78.56");
             WriteLine("Given Max Number at 2nd Position return the Same Floats Number : 22.45, 111.2, 78.56");
             WriteLine("Given Max Number at 3rd Position return the Same Floats Number : 78.56, 22.45, 111.2");
@@ -28,8 +30,22 @@ namespace FindMaxNum
             Console.WriteLine(doubleoutput2);
             double doubleoutput3 = MaximumNumberCheck.MaximumFloatNumber3(78.56, 22.45, 111.2);
             Console.WriteLine(doubleoutput3);
+
+            
+            
+            
+            WriteLine($"\nGiven Max Number at 1st Position return the Same Strings Number : |''33''|,|''22''|,|''11''|");
+            WriteLine("Given Max Number at 2nd Position return the Same Strings Number : |''11''|,|''33''|,|''22''|");
+            WriteLine("Given Max Number at 3rd Position return the Same Strings Number : |''22''|,|''11''|,|''33''|");
+            WriteLine("");
+            string strigoutput = MaximumNumberCheck.MaximumStringNumber("33", "22", "11");
+            Console.WriteLine(strigoutput);
+            string strigoutput2 = MaximumNumberCheck.MaximumStringNumber3("11", "33", "22");
+            Console.WriteLine(strigoutput2);
+            string strigoutput3 = MaximumNumberCheck.MaximumStringNumber3("22", "11", "33");
+            Console.WriteLine(strigoutput3);
             ReadLine();
-           
+
         }
 
     }
