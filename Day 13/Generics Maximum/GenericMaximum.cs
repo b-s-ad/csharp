@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FindMaxNum
+namespace FindMaxNum // UC 5
 {
   public class GenericMaximum<T> where T : IComparable
         {

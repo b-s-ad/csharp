@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FindMaxNum // UC 4 : Extend the max method take more then three parameters
+namespace FindMaxNum // UC 5
 {
   class MaximumNumberCheck
         {
@@ -23,7 +23,25 @@ namespace FindMaxNum // UC 4 : Extend the max method take more then three parame
                 throw new Exception("firstNumber,secondNumber and thirdNumber are same");
             }
 
-        
+
+        public static int MaximumIntegerNumber4(int firstValue, int secondValue, int thirdValue)
+        {
+            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
+            {
+                return firstValue;
+            }
+            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
+            {
+                return secondValue;
+            }
+            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
+            {
+                return thirdValue;
+            }
+            throw new Exception("firstNumber,secondNumber and thirdNumber are same");
+        }
+
+
         public static int MaximumIntegerNumber2(int firstValue, int secondValue, int thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
@@ -75,6 +93,25 @@ namespace FindMaxNum // UC 4 : Extend the max method take more then three parame
             }
             throw new Exception("firstNumber,secondNumber and thirdNumber are same");
         }
+
+
+        public static double MaximumFloatNumber4(double firstValue, double secondValue, double thirdValue)
+        {
+            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
+            {
+                return firstValue;
+            }
+            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
+            {
+                return secondValue;
+            }
+            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
+            {
+                return thirdValue;
+            }
+            throw new Exception("firstNumber,secondNumber and thirdNumber are same");
+        }
+
 
 
         public static double MaximumFloatNumber2(double firstValue, double secondValue, double thirdValue)
@@ -135,6 +172,35 @@ namespace FindMaxNum // UC 4 : Extend the max method take more then three parame
 
             throw new Exception("firstNumber,secondNumber and thirdNumber are same");
         }
+
+
+        public static string MaximumStringNumber4(string firstString, string secondString, string thirdString)
+        {
+            if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0 ||
+                firstString.CompareTo(secondString) >= 0 && firstString.CompareTo(thirdString) > 0 ||
+                firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) >= 0)
+            {
+                return firstString;
+            }
+
+            if (secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) > 0 ||
+                secondString.CompareTo(firstString) >= 0 && secondString.CompareTo(thirdString) > 0 ||
+                secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) >= 0)
+            {
+                return secondString;
+            }
+
+            if (thirdString.CompareTo(firstString) > 0 && thirdString.CompareTo(secondString) > 0 ||
+                thirdString.CompareTo(firstString) >= 0 && thirdString.CompareTo(secondString) > 0 ||
+                thirdString.CompareTo(firstString) > 0 && thirdString.CompareTo(secondString) >= 0)
+            {
+                return thirdString;
+            }
+
+            throw new Exception("firstNumber,secondNumber and thirdNumber are same");
+        }
+
+
 
         public static string MaximumStringNumber2(string firstString, string secondString, string thirdString)
         {
