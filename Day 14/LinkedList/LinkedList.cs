@@ -39,7 +39,7 @@ namespace DataStructure
             }
         }
         // 3 15
-        /*internal Node InsertAtParticularPosition(int position, int data)
+ /*        internal Node InsertAtParticularPosition(int position, int data)
         {
             if (position < 1)
                 Console.WriteLine("Invalid position");
@@ -105,7 +105,7 @@ namespace DataStructure
             }
             return null;
         }
-*/
+ */
 
     }
 }
