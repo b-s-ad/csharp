@@ -9,7 +9,7 @@ namespace DataStructure
         {
             #region linked list
 
-            WriteLine("UC 5\n" +
+            WriteLine("UC 6\n" +
                 "\nAbility to delete the Last element in the LinkedList of sequence 56->30->70" +
                 "\n- Write pop method "//pop (RemoveLastNode) = remove/delete 
                 + "\n- Note there is new tail" +
