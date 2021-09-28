@@ -7,7 +7,7 @@ namespace DataStructure
     class LinkedList
     {
         internal Node head; //new 
-        internal void Add(int data)
+        internal void Append(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
