@@ -10,10 +10,10 @@ namespace DataStructure
             #region linked list
 
             WriteLine("UC 5\n" +
-                "\nAbility to delete the first element in the LinkedList of sequence 56->30->70" +
-                "\n- Write pop method "//pop (RemoveFirstNode) = remove/delete 
-                + "\n- Note there is new head" +
-                "\n- Final Sequence: 30->70" 
+                "\nAbility to delete the Last element in the LinkedList of sequence 56->30->70" +
+                "\n- Write pop method "//pop (RemoveLastNode) = remove/delete 
+                + "\n- Note there is new tail" +
+                "\n- Final Sequence: 56->30"
                  + "\n=========================================\n");
 
             LinkedList list = new LinkedList();
@@ -21,7 +21,7 @@ namespace DataStructure
             list.Add(30);
             list.Add(70);
             //list.InsertAtParticularPosition(2, 30);
-            list.RemoveFirstNode();
+            list.RemovaLastNode();
             WriteLine("");
             ReadKey();
             list.Display();
