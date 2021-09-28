@@ -7,7 +7,7 @@ namespace DataStructure
 {
     class Program
     {
-        static void Main(string[] args) //Section 2 // UC 3
+        static void Main(string[] args) //Section 2 // UC 4
         {
 
             /*  #region
@@ -24,7 +24,7 @@ namespace DataStructure
 
               #region  stackcode
               LinkedListStack linkedListStack = new LinkedListStack();
-             linkedListStack.Push(70);
+              linkedListStack.Push(70);
               linkedListStack.Push(30);
               linkedListStack.Push(56);
               WriteLine("\n");
@@ -38,7 +38,7 @@ namespace DataStructure
               linkedListStack.Display();
               ReadLine();
               #endregion stackcode
-  */
+  
 
             #region  Queue link
             LinkedListQueue linkedListQueue = new LinkedListQueue();
@@ -47,6 +47,23 @@ namespace DataStructure
             linkedListQueue.Enqueue(70);
             WriteLine("\n");
             linkedListQueue.Display();// this.top=this.top.next
+            ReadLine();
+            #endregion
+*/
+
+            //DeQueue link
+            #region  
+            LinkedListQueue linkedListQueue = new LinkedListQueue();
+            linkedListQueue.Enqueue(56);
+            linkedListQueue.Enqueue(30);
+            linkedListQueue.Enqueue(70);
+            WriteLine("\n");
+            linkedListQueue.Display();// this.top=this.top.next
+            WriteLine("");
+            ReadKey();
+            linkedListQueue.Dequeue();
+            ReadKey();
+            linkedListQueue.Display();
             ReadLine();
             #endregion
 

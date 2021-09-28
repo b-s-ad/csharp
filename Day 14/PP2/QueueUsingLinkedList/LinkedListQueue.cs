@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataStructure.QueueUsingLinkedList
 {
-    class LinkedListQueue  //Section 2 // UC 3
+    class LinkedListQueue  //Section 2 // UC 4
     {
         Node head = null;
         internal void Enqueue(int data)
@@ -40,6 +40,16 @@ namespace DataStructure.QueueUsingLinkedList
                 temp = temp.next;
             }
 
+        }
+        internal void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Stack is empty, Deletion is not possible");
+                return;
+            }
+            Console.WriteLine("Value popped is {0} ", this.head.data);
+            this.head = this.head.next;
         }
     }
 }

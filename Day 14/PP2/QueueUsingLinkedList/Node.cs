@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataStructure.QueueUsingLinkedList
 {
-    class Node //Section 2 // UC 3
+    class Node //Section 2 // UC 4
     {
         public int data;
         public Node next;
