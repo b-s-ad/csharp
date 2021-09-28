@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataStructure.StackUsingLinkedList
 {
-    class LinkedListStack
+    class LinkedListStack //Section 2 // UC 2 
     {
 
         private Node top;

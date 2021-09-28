@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataStructure.StackUsingLinkedList
 {
-    class Node
+    class Node //Section 2 // UC 2 
     {
         public int data;
         public Node next;
