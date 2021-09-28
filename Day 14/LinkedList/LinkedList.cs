@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataStructure
 {
-    class LinkedList
+    class LinkedList  //UC 5
     {
         internal Node head; //new 
         internal void Add(int data)
@@ -39,7 +39,7 @@ namespace DataStructure
             }
         }
         // 3 15
-         internal Node InsertAtParticularPosition(int position, int data)
+       /*  internal Node InsertAtParticularPosition(int position, int data)
         {
             if (position < 1)
                 Console.WriteLine("Invalid position");
@@ -69,8 +69,8 @@ namespace DataStructure
             }
             return head;
         }
-
- /*       internal Node RemoveFirstNode()
+*/
+        internal Node RemoveFirstNode()
         {
             if (this.head == null)
                 return null;
@@ -78,7 +78,7 @@ namespace DataStructure
             return this.head;
         }
 
-        internal Node RemovaLastNode()
+ /*       internal Node RemovaLastNode()
         {
             if (head == null)
                 return null;

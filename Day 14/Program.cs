@@ -9,18 +9,21 @@ namespace DataStructure
         {
             #region linked list
 
-            WriteLine("UC 4\n" +
-                "\nAbility to insert 30 between 56 and 70" +
-                "\n- Final Sequence: 56->30->70" 
+            WriteLine("UC 5\n" +
+                "\nAbility to delete the first element in the LinkedList of sequence 56->30->70" +
+                "\n- Write pop method "//pop (RemoveFirstNode) = remove/delete 
+                + "\n- Note there is new head" +
+                "\n- Final Sequence: 30->70" 
                  + "\n=========================================\n");
 
             LinkedList list = new LinkedList();
             list.Add(56);
             list.Add(30);
             list.Add(70);
-            list.InsertAtParticularPosition(2, 30);
-            
+            //list.InsertAtParticularPosition(2, 30);
+            list.RemoveFirstNode();
             WriteLine("");
+            ReadKey();
             list.Display();
             ReadLine();
             #endregion
