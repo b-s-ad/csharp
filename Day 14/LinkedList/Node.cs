@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataStructure
 {
-    class Node //UC 7
+    class Node //UC 8
     {
 
         public int data;

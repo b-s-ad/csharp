@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataStructure
 {
-    class LinkedList  //UC 7
+    class LinkedList  //UC 8
     {
         internal Node head; //new 
         internal void Add(int data)
@@ -39,7 +39,7 @@ namespace DataStructure
             }
         }
         // 3 15
-        /*  internal Node InsertAtParticularPosition(int position, int data)
+          internal Node InsertAtParticularPosition(int position, int data)
          {
              if (position < 1)
                  Console.WriteLine("Invalid position");
@@ -69,44 +69,44 @@ namespace DataStructure
              }
              return head;
          }
-
-         internal Node RemoveFirstNode()
-         {
-             if (this.head == null)
-                 return null;
-             this.head = this.head.next;
-             return this.head;
-         }
-
-  
-        internal Node RemovaLastNode()
-        {
-            if (head == null)
-                return null;
-            if (head.next == null)
-                return null;
-            Node newNode = head;
-            while (newNode.next.next != null)
-            {
-                newNode = newNode.next;
-            }
-            newNode.next = null;
-            return head;
-        }
-        */
-                internal Node Search(int value)
+        /*
+                internal Node RemoveFirstNode()
                 {
-                    while (this.head != null)
-                    {
-                        if (this.head.data == value)
-                        {
-                            return this.head;
-                        }
-                        this.head = this.head.next;
-                    }
-                    return null;
+                    if (this.head == null)
+                        return null;
+                    this.head = this.head.next;
+                    return this.head;
                 }
-         
+
+
+                internal Node RemovaLastNode()
+                {
+                    if (head == null)
+                        return null;
+                    if (head.next == null)
+                        return null;
+                    Node newNode = head;
+                    while (newNode.next.next != null)
+                    {
+                        newNode = newNode.next;
+                    }
+                    newNode.next = null;
+                    return head;
+                }
+        */
+        internal Node Search(int value)
+        {
+            while (this.head != null)
+            {
+                if (this.head.data == value)
+                {
+                    return this.head;
+                }
+                this.head = this.head.next;
+            }
+            return null;
+        }
+
 
     }
 }
