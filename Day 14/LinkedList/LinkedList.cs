@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataStructure
 {
-    class LinkedList  //UC 8
+    class LinkedList  //UC 9
     {
         internal Node head; //new 
         internal void Add(int data)
@@ -69,7 +69,7 @@ namespace DataStructure
              }
              return head;
          }
-        /*
+        
                 internal Node RemoveFirstNode()
                 {
                     if (this.head == null)
@@ -93,7 +93,7 @@ namespace DataStructure
                     newNode.next = null;
                     return head;
                 }
-        */
+        
         internal Node Search(int value)
         {
             while (this.head != null)

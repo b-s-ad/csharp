@@ -9,12 +9,12 @@ namespace DataStructure
         {
             #region linked list
 
-            WriteLine("UC 8\n" +
-                "\nAbility to insert 40 after 30 to" +
-                "\nthe Linked List sequence of" +
-                "\n56->30->70" +
-                "- Search LinkedList to get Node with key value 30\n- Then Insert 40 to 30" +
-                "\n- Final Sequence: 56->30->40->70" +
+            WriteLine("UC 9\n" +
+                "\nAbility to delete 40 from the Linked" +
+                "\nList sequence of 56->30->40->70" +
+                "\nand show the size of LinkedList is 3" +
+                "\n- Search LinkedList to find node with key value 40\n- Delete the node" +
+                "\n- Final Sequence: 56->30->70" +
                 "\n=========================================\n");
 
             LinkedList list = new LinkedList();
@@ -25,12 +25,22 @@ namespace DataStructure
             //list.InsertAtParticularPosition(2, 30);
             WriteLine("");
             list.Search(30);
-            list.Display();
-            ReadKey();                    
+            
+            
             list.InsertAtParticularPosition(4, 40);
             WriteLine("");
             list.InsertAtParticularPosition(1, 56);
-            WriteLine("");            
+            
+            WriteLine("");
+            ReadKey();
+            list.Display();
+        
+            list.Search(40);
+            WriteLine("");
+            list.RemoveFirstNode();
+            list.InsertAtParticularPosition(1, 56);
+            list.InsertAtParticularPosition(2, 30);
+            WriteLine("");
             ReadKey();
             list.Display();
             ReadLine();
