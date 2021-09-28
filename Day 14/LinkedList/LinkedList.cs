@@ -7,7 +7,7 @@ namespace DataStructure
     class LinkedList
     {
         internal Node head; //new 
-        internal void Append(int data)
+        internal void Add(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -39,7 +39,7 @@ namespace DataStructure
             }
         }
         // 3 15
- /*        internal Node InsertAtParticularPosition(int position, int data)
+         internal Node InsertAtParticularPosition(int position, int data)
         {
             if (position < 1)
                 Console.WriteLine("Invalid position");
@@ -70,7 +70,7 @@ namespace DataStructure
             return head;
         }
 
-        internal Node RemoveFirstNode()
+ /*       internal Node RemoveFirstNode()
         {
             if (this.head == null)
                 return null;
