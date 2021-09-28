@@ -9,20 +9,18 @@ namespace DataStructure
         {
             #region linked list
 
-            WriteLine("UC 6\n" +
-                "\nAbility to delete the Last element in the LinkedList of sequence 56->30->70" +
-                "\n- Write pop method "//pop (RemoveLastNode) = remove/delete 
-                + "\n- Note there is new tail" +
-                "\n- Final Sequence: 56->30"
-                 + "\n=========================================\n");
+            WriteLine("UC 7\n" +
+                "\nAbility to search LinkedList to find Node with value 30" +
+                
+                  "\n=========================================\n");
 
             LinkedList list = new LinkedList();
             list.Add(56);
             list.Add(30);
             list.Add(70);
             //list.InsertAtParticularPosition(2, 30);
-            list.RemovaLastNode();
             WriteLine("");
+            list.Search(30);
             ReadKey();
             list.Display();
             ReadLine();
