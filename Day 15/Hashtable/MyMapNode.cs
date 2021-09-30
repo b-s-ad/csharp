@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace HashTable  // UC 2
+namespace HashTable  // UC 3
 {
             class MyMapNode<K, V>
         {
@@ -22,9 +22,33 @@ namespace HashTable  // UC 2
             }
 
 
-            
+        public void Remove(K key)
+        {
+            int position = GetArrayPosition(key);
+            LinkedList<KeyValue<K, V>> linkedList = GetLinkedList(position);
+            bool itemFound = false;
+            KeyValue<K, V> foundItem = default(KeyValue<K, V>);
+            foreach (KeyValue<K, V> item in linkedList)
 
-            public V Get(K key)
+            {
+                if (item.Key.Equals(key))
+                {
+                    itemFound = true;
+                    foundItem = item;
+                }
+            }
+
+
+            if (itemFound)
+            {
+                linkedList.Remove(foundItem);
+            }
+        }
+
+
+
+
+        public V Get(K key)
             {
                 int position = GetArrayPosition(key);
                 LinkedList<KeyValue<K, V>> linkedList = GetLinkedList(position);
