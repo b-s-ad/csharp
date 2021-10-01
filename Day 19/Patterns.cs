@@ -7,11 +7,11 @@ namespace RegexPatternMatching
 {
     class Patterns
     {
-        public static string Regex_Minpass = "^[A-Za-z*]{8,}$"; 
+        public static string Regex_Rule2 = "(?=.*[a-z])(?=.*[A-Z]).{8,}$"; 
        
-        public bool validateMinpass(string Minpass)
+        public bool validateRule2(string Rule2)
         {
-            return Regex.IsMatch(Minpass, Regex_Minpass);
+            return Regex.IsMatch(Rule2, Regex_Rule2);
         }
     }
 
