@@ -14,12 +14,12 @@ namespace RegexPatternMatching
         {
             Clear();
             Patterns patterns = new Patterns();
-            WriteLine("\n\tUC 3\n" + "\n As a User need to enter a valid email"+ "\n-E.g.abc.xyz@bl.co.in");
-            WriteLine("-Email has 3 mandatory parts(abc, bl" + "& co) and 2 optional(xyz & in) with " + "precise @ and . positions");
-            WriteLine("\nDefault Value : abc.xyz@bl.co.in || abc@bl.co\n");
-            WriteLine(patterns.validateValidemail("abc.xyz@bl.co.in"));
+            WriteLine("\n\tUC 4\n" + "\n As a User need to follow pre-defined Mobile Format" + "\n-E.g. 91 9919819801");
+            WriteLine("-Country code follow by space and 10 digit number");
+            WriteLine("\nDefault Value : 91 9919819801\n");
+            WriteLine(patterns.validateMobileFormat("91 9919819801"));
             WriteLine("\nEnter New Valid Input : \n");
-            WriteLine(patterns.validateValidemail(ReadLine()));
+            WriteLine(patterns.validateMobileFormat (ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
             
 

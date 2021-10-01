@@ -7,11 +7,11 @@ namespace RegexPatternMatching
 {
     class Patterns
     {
-        public static string Regex_Validemail = "^[a-z][-a-z0-9._]+@([-a-z0-9{2,2}]+[.])+[a-z]{2,2}$"; 
+        public static string Regex_MobileFormat = "^[9][1][ ][1-9][0-9]{9}$"; 
        
-        public bool validateValidemail(string Validemail)
+        public bool validateMobileFormat(string MobileFormat)
         {
-            return Regex.IsMatch(Validemail, Regex_Validemail);
+            return Regex.IsMatch(MobileFormat, Regex_MobileFormat);
         }
     }
 
