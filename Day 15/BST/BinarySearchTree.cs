@@ -82,7 +82,7 @@ namespace BST
             if (node.NodeData.Equals(element))
 
             {
-                Console.WriteLine("\nFound the element in BST" + " " + node.NodeData);
+                Console.WriteLine("\nFound the element in BST" + "\n\n" + node.NodeData);
                 result = true;
             }
             else

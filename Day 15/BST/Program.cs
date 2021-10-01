@@ -28,9 +28,9 @@ namespace BST
                 WriteLine("");
                 binarySearch.Display();
                 bool result = binarySearch.IfExists(63, binarySearch);
-                //WriteLine(result);
+                WriteLine(result);
                 WriteLine("");
-                binarySearch.GetSize();
+                //binarySearch.GetSize();
                 ReadLine();
                
 
