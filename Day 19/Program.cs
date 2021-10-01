@@ -14,9 +14,9 @@ namespace RegexPatternMatching
         {
             Clear();
             Patterns patterns = new Patterns();
-            WriteLine("\n\tUC 1\n" + "\n As a User need to enter a valid First Name"+ "\n-First name starts with Cap and has minimum 3 characters");
-            WriteLine("\nDefault Value : Bond007\n \nEnter Input : \n");
-            WriteLine(patterns.validatePinCode(ReadLine()));
+            WriteLine("\n\tUC 2\n" + "\n As a User need to enter a valid Last Name"+ "\n-Last name starts with Cap and has minimum 3 characters");
+            WriteLine("\nDefault Value : bill Gates2021\n \nEnter Input : \n");
+            WriteLine(patterns.validateLastname(ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
             
 

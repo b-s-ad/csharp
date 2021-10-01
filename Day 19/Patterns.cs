@@ -7,11 +7,11 @@ namespace RegexPatternMatching
 {
     class Patterns
     {
-        public static string Regex_Pincode = "^([A-Z][a-zA-Z0-9]*)$";
+        public static string Regex_Lastname = "^[a-z]*[ ]([A-Z][a-z0-9]*)$";
        
-        public bool validatePinCode(string pincode)
+        public bool validateLastname(string Lastname)
         {
-            return Regex.IsMatch(pincode, Regex_Pincode);
+            return Regex.IsMatch(Lastname, Regex_Lastname);
         }
     }
 
