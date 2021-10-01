@@ -14,12 +14,12 @@ namespace RegexPatternMatching
         {
             Clear();
             Patterns patterns = new Patterns();
-            WriteLine("\n\tUC 4\n" + "\n As a User need to follow pre-defined Mobile Format" + "\n-E.g. 91 9919819801");
-            WriteLine("-Country code follow by space and 10 digit number");
-            WriteLine("\nDefault Value : 91 9919819801\n");
-            WriteLine(patterns.validateMobileFormat("91 9919819801"));
+            WriteLine("\n\tUC 5\n" + "\n As a User need to follow pre-defined Password rules." + "\n-Rule1 – minimum 8 Characters");
+            WriteLine("-NOTE – All rules must be passed");
+            WriteLine("\nDefault Value : b@1z#cA0z \n");
+            WriteLine(patterns.validateMinpass("b@1z#cA0z"));
             WriteLine("\nEnter New Valid Input : \n");
-            WriteLine(patterns.validateMobileFormat (ReadLine()));
+            WriteLine(patterns.validateMinpass(ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
             
 

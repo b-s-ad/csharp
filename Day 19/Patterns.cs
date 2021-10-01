@@ -7,11 +7,11 @@ namespace RegexPatternMatching
 {
     class Patterns
     {
-        public static string Regex_MobileFormat = "^[9][1][ ][1-9][0-9]{9}$"; 
+        public static string Regex_Minpass = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"; 
        
-        public bool validateMobileFormat(string MobileFormat)
+        public bool validateMinpass(string Minpass)
         {
-            return Regex.IsMatch(MobileFormat, Regex_MobileFormat);
+            return Regex.IsMatch(Minpass, Regex_Minpass);
         }
     }
 
