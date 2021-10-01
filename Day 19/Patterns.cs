@@ -7,7 +7,7 @@ namespace RegexPatternMatching
 {
     class Patterns
     {
-        public static string Regex_Minpass = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"; 
+        public static string Regex_Minpass = "^[A-Za-z*]{8,}$"; 
        
         public bool validateMinpass(string Minpass)
         {

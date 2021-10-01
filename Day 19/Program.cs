@@ -16,8 +16,8 @@ namespace RegexPatternMatching
             Patterns patterns = new Patterns();
             WriteLine("\n\tUC 5\n" + "\n As a User need to follow pre-defined Password rules." + "\n-Rule1 – minimum 8 Characters");
             WriteLine("-NOTE – All rules must be passed");
-            WriteLine("\nDefault Value : b@1z#cA0z \n");
-            WriteLine(patterns.validateMinpass("b@1z#cA0z"));
+            WriteLine("\nDefault Value : ABCDabcd | abcdABCDEFgh \n");
+            WriteLine(patterns.validateMinpass("ABCDabcd"));
             WriteLine("\nEnter New Valid Input : \n");
             WriteLine(patterns.validateMinpass(ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
