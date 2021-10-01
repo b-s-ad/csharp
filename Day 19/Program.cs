@@ -14,12 +14,12 @@ namespace RegexPatternMatching
         {
             Clear();
             Patterns patterns = new Patterns();
-            WriteLine("\n\tUC 6\n" + "\n Rule2 – Should have at least 1 Upper Case");
+            WriteLine("\n\tUC 7\n" + "\n Rule2 – Should have at least 1 numeric number in the password");
             WriteLine("-NOTE – All rules must be passed");
-            WriteLine("\nDefault Value : abcdabcdA \n");
-            WriteLine(patterns.validateRule2("abcdabcdA"));
+            WriteLine("\nDefault Value : abcdabAd1 \n");
+            WriteLine(patterns.validateRule3("abcdabAd1"));
             WriteLine("\nEnter New Valid Input : \n");
-            WriteLine(patterns.validateRule2(ReadLine()));
+            WriteLine(patterns.validateRule3(ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
             
 

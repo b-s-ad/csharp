@@ -7,11 +7,11 @@ namespace RegexPatternMatching
 {
     class Patterns
     {
-        public static string Regex_Rule2 = "(?=.*[a-z])(?=.*[A-Z]).{8,}$"; 
+        public static string Regex_Rule3 = "(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{8,}$"; 
        
-        public bool validateRule2(string Rule2)
+        public bool validateRule3(string Rule3)
         {
-            return Regex.IsMatch(Rule2, Regex_Rule2);
+            return Regex.IsMatch(Rule3, Regex_Rule3);
         }
     }
 
