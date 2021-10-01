@@ -7,11 +7,11 @@ namespace RegexPatternMatching
 {
     class Patterns
     {
-        public static string Regex_Lastname = "^[a-z]*[ ]([A-Z][a-z0-9]*)$";
+        public static string Regex_Validemail = "^[a-z][-a-z0-9._]+@([-a-z0-9{2,2}]+[.])+[a-z]{2,2}$"; 
        
-        public bool validateLastname(string Lastname)
+        public bool validateValidemail(string Validemail)
         {
-            return Regex.IsMatch(Lastname, Regex_Lastname);
+            return Regex.IsMatch(Validemail, Regex_Validemail);
         }
     }
 

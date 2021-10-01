@@ -14,9 +14,12 @@ namespace RegexPatternMatching
         {
             Clear();
             Patterns patterns = new Patterns();
-            WriteLine("\n\tUC 2\n" + "\n As a User need to enter a valid Last Name"+ "\n-Last name starts with Cap and has minimum 3 characters");
-            WriteLine("\nDefault Value : bill Gates2021\n \nEnter Input : \n");
-            WriteLine(patterns.validateLastname(ReadLine()));
+            WriteLine("\n\tUC 3\n" + "\n As a User need to enter a valid email"+ "\n-E.g.abc.xyz@bl.co.in");
+            WriteLine("-Email has 3 mandatory parts(abc, bl" + "& co) and 2 optional(xyz & in) with " + "precise @ and . positions");
+            WriteLine("\nDefault Value : abc.xyz@bl.co.in || abc@bl.co\n");
+            WriteLine(patterns.validateValidemail("abc.xyz@bl.co.in"));
+            WriteLine("\nEnter New Valid Input : \n");
+            WriteLine(patterns.validateValidemail(ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
             
 
