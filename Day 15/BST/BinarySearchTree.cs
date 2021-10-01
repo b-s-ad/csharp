@@ -69,6 +69,12 @@ namespace BST
             }
         }
 
+
+        public void GetSize()
+        {
+            Console.WriteLine("Size" + " " + (1 + this.leftCount + this.rightCount));
+        }
+
         public bool IfExists(T element, BinarySearchTree<T> node)
         {
             if (node == null)
