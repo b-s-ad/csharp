@@ -15,13 +15,13 @@ namespace RegexPatternMatching
             Clear();
             Patterns patterns = new Patterns();
             WriteLine("\n\tUC 9\n" + "\nSample Emails to Test\n");
-            WriteLine("B. InValid Emails 01");
-            WriteLine("\nDefault Value : abc – must contains “@” symbol");
-            WriteLine(patterns.validateIVE1("abc"));
-            WriteLine("\nValid Value : abc@");
-            WriteLine(patterns.validateIVE1("abc@"));
+            WriteLine("B. InValid Emails 02");
+            WriteLine("\nDefault Value : abc@.com.my – tld can not start with dot “.”");
+            WriteLine(patterns.validateIVE2("abc@.com.my"));
+            WriteLine("\nValid Value : abc@abc.com.my");
+            WriteLine(patterns.validateIVE2("abc@abc.com.my"));
             WriteLine("\nEnter New Valid |or| InValid Input : \n");
-            WriteLine(patterns.validateIVE1(ReadLine()));
+            WriteLine(patterns.validateIVE2(ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
             
 
