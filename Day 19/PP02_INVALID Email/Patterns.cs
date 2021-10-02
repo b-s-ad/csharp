@@ -7,11 +7,11 @@ namespace RegexPatternMatching
 {
     class Patterns
     {
-        public static string Regex_IVE9 = @"(^[\w]+.{1}[\d]+@[\w]+)\.([\w][\w][\w])$";
+        public static string Regex_IVE10 = @"(^[\w]+@[\w]+)\.([\w][\w][\w])$";
 
-        public bool validateIVE9(string IVE9)
+        public bool validateIVE10(string IVE10)
         {
-            return Regex.IsMatch(IVE9, Regex_IVE9);
+            return Regex.IsMatch(IVE10, Regex_IVE10);
         }
     }
 
