@@ -7,11 +7,11 @@ namespace RegexPatternMatching
 {
     class Patterns
     {
-        public static string Regex_VE7 = "^[a-zA-z]+[@]+[0-9]+[.][a-zA-Z]{2,3}$";
-       
-        public bool validateVE7(string VE7)
+        public static string Regex_VE8 = "^[a-zA-z]+[@}+[a-zA-Z]+[.][a-zA-Z]{2,3}[.][a-zA-z]{2,3}$";
+
+        public bool validateVE8(string VE8)
         {
-            return Regex.IsMatch(VE7, Regex_VE7);
+            return Regex.IsMatch(VE8, Regex_VE8);
         }
     }
 
