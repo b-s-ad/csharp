@@ -14,12 +14,12 @@ namespace RegexPatternMatching
         {
             Clear();
             Patterns patterns = new Patterns();
-            WriteLine("\n\tUC 8\n" + "\nSample Emails to Test\n");
-            WriteLine("A. Valid Emails 03");
-            WriteLine("\nDefault Value : abc.100@yahoo.com \n");
-            WriteLine(patterns.validateVE3("abc.100@yahoo.com"));
+            WriteLine("\n\tUC 9\n" + "\nSample Emails to Test\n");
+            WriteLine("A. Valid Emails 01");
+            WriteLine("\nDefault Value : abc@yahoo.com \n");
+            WriteLine(patterns.validateVE1("abc@yahoo.com"));
             WriteLine("\nEnter New Valid Input : \n");
-            WriteLine(patterns.validateVE3(ReadLine()));
+            WriteLine(patterns.validateVE1(ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
             
 
