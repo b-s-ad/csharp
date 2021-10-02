@@ -15,13 +15,13 @@ namespace RegexPatternMatching
             Clear();
             Patterns patterns = new Patterns();
             WriteLine("\n\tUC 9\n" + "\nSample Emails to Test\n");
-            WriteLine("A. Valid Emails 03");
-            WriteLine("\nDefault Value : abc.100@yahoo.com \n");
-            WriteLine(patterns.validateVE3("abc.100@yahoo.com"));
+            WriteLine("A. Valid Emails 04");
+            WriteLine("\nDefault Value : abc111@abc.com \n");
+            WriteLine(patterns.validateVE4("abc111@abc.com"));
             WriteLine("\nEnter New Valid Input : \n");
-            WriteLine(patterns.validateVE3(ReadLine()));
+            WriteLine(patterns.validateVE4(ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
-
+            
 
             string Menu;
             Menu = ReadLine();
