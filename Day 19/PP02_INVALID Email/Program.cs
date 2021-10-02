@@ -15,13 +15,13 @@ namespace RegexPatternMatching
             Clear();
             Patterns patterns = new Patterns();
             WriteLine("\n\tUC 9\n" + "\nSample Emails to Test\n");
-            WriteLine("B. InValid Emails 08");
-            WriteLine("\nDefault Value : abc@%*.com \t– email’s tld is only allow character and digit");
-            WriteLine(patterns.validateIVE8("abc@%*.com"));
-            WriteLine("\nValid Value : abcA1b2C@mail123ABC.com");
-            WriteLine(patterns.validateIVE8("abcA1b2C@mail123ABC.com"));
+            WriteLine("B. InValid Emails 09");
+            WriteLine("\nDefault Value : abc..2002@gmail.com \t– double dots “.” are not allow");
+            WriteLine(patterns.validateIVE9("abc..2002@gmail.com"));
+            WriteLine("\nValid Value : abc.2002@gmail.com");
+            WriteLine(patterns.validateIVE9("abc.2002@gmail.com"));
             WriteLine("\nEnter New Valid |or| InValid Input : \n");
-            WriteLine(patterns.validateIVE8(ReadLine()));
+            WriteLine(patterns.validateIVE9(ReadLine()));
             WriteLine("\nPress Enter To Type Value  || 0 = To Exit");
             
 
